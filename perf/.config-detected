@@ -1,0 +1,37 @@
+ARCH=x86
+CONFIG_X86=y
+CONFIG_X86_64=y
+CONFIG_PERF_REGS=y
+CONFIG_LIBELF=y
+CONFIG_DWARF=y
+CONFIG_LIBBPF=y
+CONFIG_BPF_PROLOGUE=y
+CONFIG_SDT_EVENT=y
+CONFIG_JITDUMP=y
+CONFIG_LOCAL_LIBUNWIND=y
+CONFIG_LIBUNWIND=y
+CONFIG_DWARF_UNWIND=y
+CONFIG_AUDIT=y
+CONFIG_CRYPTO=y
+CONFIG_SLANG=y
+CONFIG_LIBPERL=y
+CONFIG_LIBPYTHON=y
+CONFIG_ZLIB=y
+CONFIG_LZMA=y
+CONFIG_NUMA=y
+CONFIG_AUXTRACE=y
+bindir_SQ=/usr/local/bin
+PYTHON_WORD='/usr/bin/python2'
+htmldir_SQ=share/doc/perf-doc
+infodir_SQ=share/info
+mandir_SQ=share/man
+ETC_PERFCONFIG_SQ=etc/perfconfig
+STRACE_GROUPS_DIR_SQ=share/perf-core/strace/groups
+prefix_SQ=/usr/local
+perfexecdir_SQ=libexec/perf-core
+tipdir_SQ=share/doc/perf-tip
+srcdir_SQ=/home/taeung/git/taeung/linux-perf/tools/perf
+LIBDIR=
+GTK_CFLAGS=-DHAVE_GTK_INFO_BAR_SUPPORT -pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng12 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/freetype2
+PERL_EMBED_CCOPTS= -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64  -I/usr/lib/x86_64-linux-gnu/perl/5.22/CORE 
+PYTHON_EMBED_CCOPTS=-I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu/python2.7  -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -fstack-protector-strong -Wformat -Werror=format-security  -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes
